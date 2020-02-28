@@ -22,16 +22,15 @@
             />
 
         <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/image_profile"
+            android:id="@+id/img_profile"
             android:layout_width="200dp"
             android:layout_height="200dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="4dp"
             android:background="@drawable/profile_picture"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.545"
+            app:layout_constraintHorizontal_bias="0.559"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/title_about"
@@ -46,7 +45,7 @@
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/image_profile"
+            app:layout_constraintTop_toBottomOf="@+id/img_profile"
             />
 
         <TextView
@@ -79,7 +78,7 @@
 
         <TextView
             android:id="@+id/title_fullname"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
@@ -88,9 +87,9 @@
             android:textAlignment="textStart"
             android:textSize="20sp"
             app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/separator1"
-            />
+            app:layout_constraintTop_toBottomOf="@id/separator1" />
 
         <TextView
             android:id="@+id/label_fullname"
@@ -165,22 +164,22 @@
 
         <TextView
             android:id="@+id/title_homepage"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_width="102dp"
+            android:layout_height="34dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:fontFamily="@font/futura_pt_demibold"
-            android:text="Email"
+            android:text="Homepage"
             android:textAlignment="textStart"
             android:textSize="20sp"
             app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/separator3"
-            />
+            app:layout_constraintTop_toBottomOf="@id/separator3" />
 
         <TextView
             android:id="@+id/label_homepage"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
@@ -188,10 +187,10 @@
             android:textAlignment="textEnd"
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="@+id/guideline2"
             app:layout_constraintTop_toBottomOf="@id/separator3"
-            tools:text="jonathan.designer.com"
-            />
+            tools:text="jonathan.designer.com" />
 
         <View
             android:id="@+id/separator4"
@@ -220,6 +219,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/separator4"
+            android:onClick="handleOpenHomepage"
             />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
